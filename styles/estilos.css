@@ -5,6 +5,7 @@ body{
 ul{
     list-style: none;
     padding: 0px;
+    padding-top: 3px;
     margin: 0px;
 }
 .navbar{
@@ -13,4 +14,17 @@ ul{
 }
 .logo{
     height: 70px;
+}
+.mainButton{
+    background-color: #1bb76e;
+    color: white;
+    border: 0px;
+    padding:5px 10px ;
+    border-radius: 10px;
+    font-weight: bolder;
+    box-shadow: 2px 2px green;
+}
+.mainButton:hover{
+    cursor:pointer;
+    transform: scale(1.07);
 }
