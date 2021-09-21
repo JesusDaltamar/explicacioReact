@@ -28,3 +28,16 @@ ul{
     cursor:pointer;
     transform: scale(1.07);
 }
+.secundaryButton{
+    background-color: #5b59e6;
+    color: white;
+    border: 0px;
+    padding:5px 10px ;
+    border-radius: 10px;
+    font-weight: bolder;
+    box-shadow: 2px 2px rgb(100, 231, 100);
+}
+.secundaryButton:hover{
+    cursor:pointer;
+    transform: scale(1.07);
+}
