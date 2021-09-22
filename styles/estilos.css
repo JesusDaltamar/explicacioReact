@@ -54,3 +54,20 @@ ul{
 .buscar:focus-within{
     border: 1px solid blue;
 }
+.breedCardContainer{
+    display: flex;
+}
+.breedCard{
+    margin: 10px;
+}
+.contenedorImagen{
+    height: 250px;
+    width: 150px;
+    display: flex;
+    padding-top: 0px;
+}
+.contenedorImagen > img{
+    object-fit: cover;
+    width: 100%;
+    padding-top: 0px;
+}
