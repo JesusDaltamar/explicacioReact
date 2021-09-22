@@ -59,15 +59,27 @@ ul{
 }
 .breedCard{
     margin: 10px;
+    background-color: cornflowerblue;
+    box-shadow: 5px 10px 5px gray;
+    border-radius: 10px;
 }
 .contenedorImagen{
     height: 250px;
     width: 150px;
     display: flex;
-    padding-top: 0px;
 }
 .contenedorImagen > img{
     object-fit: cover;
     width: 100%;
-    padding-top: 0px;
+    border-radius: 10px;
+}
+.breedTitle{
+    color: white;
+    margin: 10px;
+    font-weight: bold;
+    font-size: x-large;
+}
+.contenedorImagen:hover{
+    cursor: pointer;
+    transform: scale(1.05)
 }
