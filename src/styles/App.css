@@ -1,0 +1,85 @@
+body{
+  margin: 0px;
+}
+
+ul{
+  list-style: none;
+  padding: 0px;
+  padding-top: 3px;
+  margin: 0px;
+}
+.navbar{
+  display: flex;
+  justify-content: space-between;
+}
+.logo{
+  height: 70px;
+}
+.Button{
+  border: 0px;
+  padding:5px 10px ;
+  border-radius: 10px;
+  font-weight: bolder
+}
+.Button:hover{
+  cursor:pointer;
+  transform: scale(1.07);
+}
+
+.mainButton{
+  background-color: #1bb76e;
+  color: white;
+}
+
+.mainButton:hover{
+  box-shadow: 2px 2px green;
+}
+.secundaryButton{
+  background-color: #5b59e6;
+  color: white;
+}
+.secundaryButton:hover{
+  box-shadow: 2px 2px rgb(100, 231, 100);
+}
+.buscar{
+  background-color: white;
+  border: 1px solid gray;
+  padding: 4px;
+  border-radius: 8px;
+}
+.buscar > input{
+  outline: none;
+  border: 0px;
+}
+.buscar:focus-within{
+  border: 1px solid blue;
+}
+.breedCardContainer{
+  display: flex;
+}
+.breedCard{
+  margin: 10px;
+  background-color: cornflowerblue;
+  box-shadow: 5px 10px 5px gray;
+  border-radius: 10px;
+}
+.contenedorImagen{
+  height: 250px;
+  width: 150px;
+  display: flex;
+}
+.contenedorImagen > img{
+  object-fit: cover;
+  width: 100%;
+  border-radius: 10px;
+}
+.breedTitle{
+  color: white;
+  margin: 10px;
+  font-weight: bold;
+  font-size: x-large;
+}
+.contenedorImagen:hover{
+  cursor: pointer;
+  transform: scale(1.05)
+}
