@@ -1,4 +1,10 @@
+import Layout from "layouts/layout"
+
 function RhodesianInfoPage(){
-    return <div>Esta es la pagina de info de Rhodesian</div>
+    return (
+        <Layout>
+            <div>Aqui va informacion del rhodesian</div>
+        </Layout>
+    )
 }
 export default RhodesianInfoPage

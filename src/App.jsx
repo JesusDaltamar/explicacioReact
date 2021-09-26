@@ -1,6 +1,7 @@
 import RhodesianInfoPage from 'pages/rhodesian';
 import 'styles/App.css';
 import Index from 'pages/index';
+import Beagle from 'pages/beagle';
 import {
   BrowserRouter as Router,
   Switch,
@@ -13,10 +14,13 @@ function App() {
     <div className="App">
       <Router>
         <Switch>
-          <Route path="/rhodesian">
+          <Route path="/rhodesian" exact>
             <RhodesianInfoPage/>
           </Route>
-          <Route path="/">
+          <Route path="/beagle" exact>
+            <Beagle/>
+          </Route>
+          <Route path="/" exact>
             <Index/>
           </Route>
         </Switch>
