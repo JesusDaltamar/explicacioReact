@@ -1,45 +1,26 @@
-import logo from './logo.svg';
+import RhodesianInfoPage from 'pages/rhodesian';
 import 'styles/App.css';
-import bordercollie from 'media/borderCollie.jpg';
-import beagle from 'media/beagle.jpg';
-import logoperrito from 'media/logoperrito.png';
-import CardRazaPerros from 'components/CardRazasPerros';
+import Index from 'pages/index';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
 
 function App() {
   return (
     <div className="App">
-      <header>
-        <ul className="navbar">
-            <li>
-                <img src={logoperrito} alt="imagen" className="logo"/>
-            </li>
-            <li>
-                <button className="Button mainButton">Nuevo post</button>
-            </li>
-            <li>
-                <button className="Button secundaryButton">Login</button>
-            </li>
-            <li>
-                <div className="buscar">
-                    <input placeholder="Buscar una raza" type="text"/>
-                    <i className="fas fa-search-plus"></i>
-                </div>
-            </li>
-            <li>
-                <button className="Button mainButton">Registro</button>
-            </li>
-        </ul>
-      </header>
-      <main>
-        <section>
-            <h1>Razas de perros</h1>
-            <ul className="breedCardContainer">
-                <CardRazaPerros nombreRaza="BorderCollie" imagen={bordercollie}/>
-                <CardRazaPerros nombreRaza="Beagle" imagen={beagle}/>
-            </ul>
-        </section>
-      </main>
-      <footer></footer>
+      <Router>
+        <Switch>
+          <Route path="/rhodesian">
+            <RhodesianInfoPage/>
+          </Route>
+          <Route path="/">
+            <Index/>
+          </Route>
+        </Switch>
+      </Router>
     </div>
   );
 }
